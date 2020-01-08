@@ -1,47 +1,43 @@
 import React, { Component } from 'react';
-import { Affix } from 'antd'
+import { Affix } from 'antd';
+// import { FullSlip, SlipItem } from "react-fullslip";
+import 'antd/dist/antd.css';
+// let topmenu = document.querySelector('.topmenu')
 
-class topfix extends Component {
+class Topfix extends Component {
+
     state = {
-        top: -55,
+        top: -105,
         bottom: 10,
+        isScroll: true,
+        currentPage: 0
     }
-    xitop = (affixed) => {
-        let top = this.state.top
 
-        if (affixed) {
-            top = 0
-            this.setState({
-                top
-            })
-        } else {
-            top = -55
-            this.setState({
-                top
-            })
-        }
 
-    }
     render() {
+        // console.log(this.props)
         return (
-            <Affix offsetTop={-10} onChange={affixed => {
-                this.xitop(affixed)
-            }} >
-                <div className="topmenu" style={{ top: this.state.top }}>
+            <>
+
+                <div className="topmenu" style={{ top: this.props.oft }}>
                     <div className="logoicon">
                         <span></span>
                     </div>
                     <div className="search">
-                        <div className="ScDate">01.06-01.07</div>
+                        <div className="ScDate">
+                            01.06 - 01.07
+                            <span className="triangle"></span>
+                        </div>
+
                         <div className="Scplace">丽江</div>
                     </div>
                     <div className="logomine">
                         <span />
                     </div>
                 </div>
-            </Affix>
+            </>
         )
     }
 
 }
-export default topfix
+export default Topfix
