@@ -46,7 +46,7 @@ function App() {
           <Hoelist></Hoelist>
         </Route >
         {/* 默认进入首页 */}
-        <Redirect to="/hoelist" />
+        <Redirect to="/hotel" />
       </Switch>
       <Nav />
     </div>);

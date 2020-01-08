@@ -7,8 +7,9 @@ import Travel from '../component/home/Travel';
 import Bigcity from '../component/home/bigcity';
 import Hotaltop from '../component/home/hotaltop';
 import Fun from '../component/home/fun';
-import { Affix } from 'antd';
+import { Affix, Drawer, Button, Radio } from 'antd';
 import '../assets/js/rem2';
+const RadioGroup = Radio.Group;
 
 class Hotel extends Component {
     constructor() {
@@ -16,9 +17,21 @@ class Hotel extends Component {
         this.myRef = React.createRef();
         this.state = {
             top: -105,
-            currentPage: 0
+            currentPage: 0,
+            visible: false,
+            placement: 'left'
         }
     }
+    showDrawer = () => {
+        this.setState({
+            visible: true,
+        });
+    };
+    onChange = e => {
+        this.setState({
+            placement: e.target.value,
+        });
+    };
 
     componentDidMount() {
         if (document.addEventListener) {
@@ -108,8 +121,9 @@ class Hotel extends Component {
                     {/* 精选酒店 */}
                     <Hotaltop />
                     <Fun />
+                    <div className="foot">客服电话 400-898-7118</div>
+                    
                 </main>
-                <footer>客服电话 400-898-7118</footer>
             </div>
         )
 

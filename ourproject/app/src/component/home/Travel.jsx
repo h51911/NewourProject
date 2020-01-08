@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Affix } from 'antd'
+// import { Affix } from 'antd'
 
 class Travel extends Component {
     render() {
@@ -10,14 +10,14 @@ class Travel extends Component {
                     <p className="p2">更多></p>
                 </div>
                 <div className="Tcon">
-                    <div className="travelitem"><img src={require("../../assets/images/tr1.jpg")} /></div>
-                    <div className="travelitem"><img src={require("../../assets/images/tr2.jpg")} /></div>
-                    <div className="travelitem"><img src={require("../../assets/images/tr3.jpg")} /></div>
+                    <div className="travelitem"><img src={require("../../assets/images/tr1.jpg")} alt="" /></div>
+                    <div className="travelitem"><img src={require("../../assets/images/tr2.jpg")} alt="" /></div>
+                    <div className="travelitem"><img src={require("../../assets/images/tr3.jpg")} alt="" /></div>
                 </div>
 
                 <div className="star">
                     <a href="###" >
-                        <img src={require("../../assets/images/star.png")} />
+                        <img src={require("../../assets/images/star.png")} alt="" />
                     </a>
                 </div>
             </div>

@@ -24,22 +24,22 @@ class Bigcity extends Component {
                     </div> */}
                     <ul>
                         <li>
-                            <a href="###" ><img src={require("../../assets/images/bc1.jpg")} /></a>
+                            <a href="###" ><img src={require("../../assets/images/bc1.jpg")} alt="" /></a>
                         </li>
                         <li>
-                            <a href="###" ><img src={require("../../assets/images/bc2.jpg")} /></a>
+                            <a href="###" ><img src={require("../../assets/images/bc2.jpg")} alt="" /></a>
                         </li>
                         <li>
-                            <a href="###" ><img src={require("../../assets/images/bc3.jpg")} /></a>
+                            <a href="###" ><img src={require("../../assets/images/bc3.jpg")} alt="" /></a>
                         </li>
                         <li>
-                            <a href="###" ><img src={require("../../assets/images/bc4.jpg")} /></a>
+                            <a href="###" ><img src={require("../../assets/images/bc4.jpg")} alt="" /></a>
                         </li>
                         <li>
-                            <a href="###" ><img src={require("../../assets/images/bc5.jpg")} /></a>
+                            <a href="###" ><img src={require("../../assets/images/bc5.jpg")} alt="" /></a>
                         </li>
                         <li>
-                            <a href="###" ><img src={require("../../assets/images/bc6.jpg")} /></a>
+                            <a href="###" ><img src={require("../../assets/images/bc6.jpg")} alt="" /></a>
                         </li>
                     </ul>
                 </div>

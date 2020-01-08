@@ -143,9 +143,9 @@ class Hotaltop extends Component {
                             {
                                 hotalist.map(item => {
                                     return (
-                                        <div key={item.imgurl} className="swiper-slide">
+                                        <div key={item.imgurl} className="swiper-slide" >
                                             <div className="imgbox">
-                                                <img src={item.imgurl} />
+                                                <img src={item.imgurl} alt="" />
                                                 <h2>{item.title}</h2>
                                                 <span>{item.place}</span>
                                                 <i>{item.rode}</i>
