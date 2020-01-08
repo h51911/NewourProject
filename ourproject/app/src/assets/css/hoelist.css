@@ -1,0 +1,249 @@
+.Hoelist {
+    width: 100%;
+}
+
+.hoelist-content {
+    width: 87.2%;
+    height: 540px;
+    margin: auto;
+    margin-top: 70px;
+    overflow-y: auto;
+}
+
+.hoelist-item {
+    width: 100%;
+    position: relative;
+    padding-bottom: 35px;
+}
+
+.item-img {
+    height: 184px;
+}
+
+.item-img img {
+    border-radius: 4%;
+}
+
+.item-price {
+    width: 33.3%;
+    position: absolute;
+    color: #fabc2c;
+    bottom: 0;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    border-radius: 0 10px 0 10px;
+    background: rgba(0, 0, 0, .7);
+    top: 154px;
+}
+
+.item-price span {
+    font-size: 12px;
+}
+
+.item-price .price-infor {
+    padding: 0px 5px 0px 5px;
+    font-size: 18px;
+}
+
+.item-tejia {
+    width: 100%;
+    padding-top: 10px;
+    line-height: 17.6px;
+}
+
+.item-tejia span {
+    border-radius: .08333rem;
+    color: #ff8080;
+    font-size: .29667rem;
+    margin-right: .16333rem;
+    padding: .06667rem .2333rem 0;
+    height: .52rem;
+    box-sizing: border-box;
+}
+
+.info-wrap {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    word-wrap: break-word;
+}
+
+.item-title {
+    width: 100%;
+    padding-top: 10px;
+    line-height: 17.6px;
+}
+
+.item-title .list-content {
+    font-size: 15px;
+    font-weight: 720;
+    width: 200px;
+    color: #555;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    float: left;
+}
+
+.item-title .list-content .dian {
+    font-weight: 800;
+}
+
+.item-title .list-extra {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.list-extra .comment {
+    color: #aaa;
+    font-size: 12px;
+    float: right;
+}
+
+.list-extra .comment span:nth-child(1) {
+    color: #fabc2c;
+    padding-right: .61333rem;
+    margin-right: .41333rem;
+    border-right: 1px solid #dadada;
+    font-weight: 700 !important;
+    line-height: 10px;
+    height: 10px;
+}
+
+.tem-adrss {
+    font-size: 6px;
+    color: #dadada;
+    padding-top: 5px;
+}
+
+.addressSpan {
+    display: block;
+    width: 36px;
+    color: #fff;
+    float: left;
+    font-size: 11px !important;
+    background-color: #fabc2c;
+    padding: 6px;
+    margin-right: 5px;
+    border-radius: 20% 20%;
+}
+
+.sdd {
+    display: block;
+    color: #aaa !important;
+    margin-top: 8px !important;
+}
+
+.item-tabs {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    line-height: 17.6px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-span {
+    display: block !important;
+    width: 17%;
+    height: 17px;
+    font-size: 12px !important;
+    padding: 2px 2px;
+    margin-right: 5px;
+    line-height: 15px;
+    border-radius: .05333rem;
+    border: 0.5px solid rgba(83, 115, 202, .3);
+    color: rgba(83, 115, 202, 1);
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.item-tabs span:nth-child(5) {
+    margin-right: 0;
+}
+
+.topmenu {
+    transition: all 0.5s;
+    transform: translateY(0);
+    height: 1rem;
+    border-bottom: 0.02rem solid #f4f4f4;
+    background-color: #fff;
+    position: fixed;
+    z-index: 88;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-left: 0.3rem;
+}
+
+.topmenu .logoicon {
+    flex: 1 1;
+    padding: 0 0.3rem 0 0.15rem;
+}
+
+.topmenu .logoicon span {
+    display: block;
+    width: 0.74rem;
+    height: 0.64rem;
+    background: url(../images/icon.png) no-repeat;
+    background-size: 100% 100%;
+    margin: auto;
+    margin-top: 0.2rem;
+}
+
+.topmenu .search {
+    flex: 6 1;
+    float: left;
+    margin-top: 0.15rem;
+    background-color: #f9f9f9;
+    height: 0.64rem;
+    border-radius: 1rem;
+    width: 1rem;
+    font-size: 0.12rem;
+    padding-top: 0.2rem;
+}
+
+.topmenu .search .ScDate {
+    float: left;
+    color: #555;
+    position: relative;
+    font-size: 0.12rem;
+    margin-left: 0.3rem;
+}
+
+#home header .topmenu .search .ScDate .triangle {
+    position: relative;
+    top: -3px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 0.13333rem solid #555;
+    border-left: 0.13333rem solid transparent;
+}
+
+.topmenu .search .Scplace {
+    margin-left: 0.3rem;
+    float: left;
+    color: #b9b9b9;
+    font-size: 0.1rem;
+}
+
+.topmenu .logomine {
+    flex: 1 1;
+    padding-right: 0.24rem;
+    padding-left: 0.15rem;
+    padding-top: 0.3rem;
+    float: right;
+}
+
+.topmenu .logomine span {
+    display: block;
+    width: 0.44rem;
+    height: 0.4rem;
+    background: url(../images//minelogo.png) no-repeat;
+    background-size: 100% 100%;
+    margin: auto;
+}

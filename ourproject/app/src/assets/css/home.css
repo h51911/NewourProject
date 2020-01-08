@@ -1,0 +1,498 @@
+html,
+body {
+  width: 100%;
+}
+#home {
+  width: 100%;
+  overflow-y: auto;
+}
+#home header .cr {
+  width: 100%;
+  overflow: hidden;
+}
+#home header .cr img {
+  width: 100%;
+}
+#home header .cr .ant-carousel .slick-slide {
+  text-align: center;
+  height: 5rem;
+  line-height: 5.5rem;
+  background: #364d79;
+  overflow: hidden;
+}
+#home header .mine {
+  display: flex;
+  z-index: 1;
+  position: relative !important;
+  top: -4.7rem;
+  flex-direction: row-reverse;
+  padding: 0 0.26rem 0 0.26rem;
+}
+#home header .mine a {
+  display: block;
+  width: 0.76rem;
+  height: 0.76rem;
+  background: url(../images/mine.png) no-repeat;
+  background-size: 100% 100%;
+}
+#home header .topmenu {
+  transition: all 0.5s;
+  transform: translateY(0);
+  height: 1rem;
+  border-bottom: 0.02rem solid #f4f4f4;
+  background-color: #fff;
+  position: fixed;
+  z-index: 88;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-left: 0.3rem;
+}
+#home header .topmenu .logoicon {
+  flex: 1;
+  padding: 0 0.3rem 0 0.15rem;
+}
+#home header .topmenu .logoicon span {
+  display: block;
+  width: 0.74rem;
+  height: 0.64rem;
+  background: url(../images/icon.png) no-repeat;
+  background-size: 100% 100%;
+  margin: auto;
+  margin-top: 0.2rem;
+}
+#home header .topmenu .search {
+  flex: 6;
+  float: left;
+  margin-top: 0.15rem;
+  background-color: #f9f9f9;
+  height: 0.64rem;
+  border-radius: 1rem;
+  width: 1rem;
+  font-size: 0.12rem;
+  padding-top: 0.2rem;
+}
+#home header .topmenu .search .ScDate {
+  float: left;
+  color: #555;
+  position: relative;
+  font-size: 0.12rem;
+  margin-left: 0.3rem;
+}
+#home header .topmenu .search .ScDate .triangle {
+  position: relative;
+  top: -3px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 0.13333rem solid #555;
+  border-left: 0.13333rem solid transparent;
+}
+#home header .topmenu .search .Scplace {
+  margin-left: 0.3rem;
+  float: left;
+  color: #b9b9b9;
+  font-size: 0.1rem;
+}
+#home header .topmenu .logomine {
+  flex: 1;
+  padding-right: 0.24rem;
+  padding-left: 0.15rem;
+  padding-top: 0.3rem;
+  float: right;
+}
+#home header .topmenu .logomine span {
+  display: block;
+  width: 0.44rem;
+  height: 0.4rem;
+  background: url(../images/minelogo.png) no-repeat;
+  background-size: 100% 100%;
+  margin: auto;
+}
+#home main .Scbook {
+  z-index: 2;
+  position: relative;
+  padding: 0 0.14rem;
+  top: -2.2rem;
+  margin-bottom: 0.26667rem;
+}
+#home main .Scbook .panel {
+  height: 4.18rem;
+  width: 90%;
+  margin: auto;
+  border-radius: 0.2rem;
+  background-color: #fff;
+  box-shadow: 0 0.1rem 0.15rem rgba(0, 0, 0, 0.1);
+  padding-bottom: 0.26667rem;
+  box-sizing: border-box;
+}
+#home main .Scbook .panel .visitedinfo {
+  background-color: transparent;
+  padding-top: 0.4rem;
+  padding-left: 0.4rem;
+  height: 0.8rem;
+  display: flex;
+}
+#home main .Scbook .panel .visitedinfo .placeinfo {
+  flex: 1;
+  font-size: 0.28rem;
+}
+#home main .Scbook .panel .visitedinfo .choose {
+  flex: 1;
+  flex: initial;
+  min-width: 0;
+  max-height: 0.21rem;
+  color: #888;
+  font-size: 0.15rem;
+  position: relative;
+}
+#home main .Scbook .panel .visitedinfo .choose .ant-radio-inner {
+  width: 0.32rem;
+  height: 0.32rem;
+  border-color: #ccc;
+}
+#home main .Scbook .panel .visitedinfo .choose .ant-radio-inner::after {
+  background-color: #fabc2c;
+}
+#home main .Scbook .panel .bd {
+  width: 85%;
+  background-color: rgba(238, 237, 237, 0.746);
+  height: 0.01rem;
+  margin: auto;
+  margin-top: 0.3rem;
+}
+#home main .Scbook .panel .booktime {
+  overflow: hidden;
+  align-self: stretch;
+  display: flex;
+  position: relative;
+  padding-top: 0rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+#home main .Scbook .panel .booktime .btL {
+  padding-top: 0.2rem;
+  box-sizing: border-box;
+  float: left;
+  width: 33.33%;
+  height: 0.5rem;
+  text-align: center;
+}
+#home main .Scbook .panel .booktime .btL p {
+  text-align: left;
+  padding-left: 0.5rem;
+  width: 100%;
+  height: 0.45333rem;
+  line-height: 0.45333rem;
+  color: #aaa;
+  font-size: 0.14rem;
+}
+#home main .Scbook .panel .booktime .btL i {
+  float: left;
+  width: 100%;
+  height: 0.56rem;
+  color: #555;
+  line-height: 0.56rem;
+  font-size: 0.32rem;
+  font-weight: 900;
+}
+#home main .Scbook .panel .booktime .btL:nth-child(3) p {
+  text-align: right;
+  padding-right: 0.56rem;
+}
+#home main .Scbook .panel .booktime .btM {
+  float: left;
+  width: 33.33%;
+  height: 100%;
+  text-align: center;
+  color: #fabc2c;
+  font-size: 0.3rem;
+  line-height: 1.32rem;
+  font-weight: 700;
+  padding-top: 0rem;
+  padding-right: 0.1rem;
+}
+#home main .Scbook .panel .Scbtn {
+  width: 5.8rem;
+  height: 0.9rem;
+  margin: auto;
+  margin-top: 0.12rem;
+  border-radius: 0.6rem;
+  background-color: #fabc2c;
+  font-size: 0.36rem;
+  color: white;
+  text-align: center;
+  line-height: 0.9rem;
+  box-shadow: 0 0.05rem 0.1rem rgba(250, 188, 44, 0.51);
+}
+#home main .Scbook .panel .textban {
+  margin-top: 0.2rem;
+  text-align: center;
+  font-size: 0.12rem;
+  color: #bbbaba;
+  margin-bottom: 0.02rem;
+}
+#home main .Scbook .panel .textban i {
+  margin-right: 0.02rem;
+}
+#home main .travel {
+  padding: 0 0.5rem;
+  margin-top: -2.2rem;
+  height: 4rem;
+}
+#home main .travel .Ttitle {
+  float: left;
+  height: 1.1rem;
+  width: 100%;
+  margin-bottom: 0.2rem;
+}
+#home main .travel .Ttitle .p1 {
+  float: left;
+  font-size: 0.44rem;
+  font-family: PingFangSC-Semibold;
+  font-weight: 600;
+  color: #555;
+  line-height: 0.8rem;
+}
+#home main .travel .Ttitle .p2 {
+  float: right;
+  font-size: 0.24rem;
+  font-family: PingFangSC-Regular;
+  font-weight: 900;
+  color: #555;
+  line-height: 0.45333rem;
+  margin-top: 0.4rem;
+  margin-right: 0rem;
+}
+#home main .travel .Tcon {
+  padding: 0;
+  margin-top: -0.45rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  float: left;
+}
+#home main .travel .Tcon .travelitem {
+  width: 31%;
+  float: left;
+  height: 80%;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 0.02667rem 0.26667rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5%;
+  box-shadow: 0 0.02667rem 0.26667rem 0 rgba(0, 0, 0, 0.1);
+  margin-right: 0.005rem;
+  margin-top: 0.15rem;
+}
+#home main .travel .Tcon .travelitem img {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+#home main .star {
+  float: left;
+  width: 100%;
+  height: auto;
+  margin: 0.3rem auto;
+}
+#home main .star img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+  border-radius: 10px;
+  background: transparent;
+  margin: auto;
+}
+#home main .bigcity {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  top: 0.2rem;
+  position: relative;
+  padding-bottom: 1.06667rem;
+  z-index: 2;
+  background-color: #fff;
+  font-family: PingFangSC-Regular, \\601d\6e90\9ed1\4f53;
+  clear: both;
+}
+#home main .bigcity h1 {
+  font-size: 22px;
+  font-weight: 700 !important;
+  color: #555;
+  max-height: 0.58667rem;
+  margin-top: 0;
+  margin-bottom: 0.13333rem;
+  padding: 0 0.54rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  word-wrap: break-word;
+  margin-left: -0.1rem;
+}
+#home main .bigcity h3 {
+  font-size: 12px;
+  font-weight: 400 !important;
+  color: #b9b9b9;
+  margin-bottom: 0.26667rem;
+  max-height: 0.58667rem;
+  padding: 0 0.54rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  word-wrap: break-word;
+  margin-top: -0.1rem;
+  margin-left: -0.1rem;
+}
+#home main .bigcity .bcarousel {
+  overflow: hidden;
+  width: 100%;
+  margin-top: -0.1rem;
+}
+#home main .bigcity .bcarousel ul {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+  padding-left: 0.44rem;
+  padding-right: 0.54rem;
+}
+#home main .bigcity .bcarousel ul li {
+  margin-right: 0.2rem;
+}
+#home main .bigcity .bcarousel ul li img {
+  width: 114px;
+  height: auto;
+  border-radius: 10px;
+}
+#home main .bigcity .bcarousel ul li:last-child {
+  padding-right: 0.5rem;
+}
+#home main .fun .funlist {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+  padding-left: 0.44rem;
+  justify-content: flex-start;
+}
+#home main .fun .funlist li {
+  margin-right: 0.2rem;
+}
+#home main .fun .funlist li a {
+  float: left;
+}
+#home main .fun .funlist li a img {
+  width: 3.12rem;
+  height: auto;
+  border-radius: 10px;
+}
+#home main .fun .funlist li span {
+  width: 100%;
+  float: left;
+  font-size: 0.26rem;
+  max-height: 1.17333rem;
+  padding-top: 0.2rem;
+  color: #555;
+  font-weight: 900 !important;
+}
+#home main .fun .funlist li p {
+  float: left;
+  font-size: 12px;
+  max-height: 0.85333rem;
+  line-height: 0.42667rem;
+  padding-top: 0.063333rem;
+  color: #aaa;
+}
+#home main .hotaltop .swiper-container {
+  height: 3.68rem;
+  object-fit: cover;
+  margin-left: -0.4rem;
+  overflow: visible;
+  height: auto;
+}
+#home main .hotaltop .swiper-scrollbar {
+  background-color: #fff;
+}
+#home main .hotaltop .swiper-slide,
+#home main .hotaltop .swiper-slide-active {
+  width: 6.54rem !important;
+  margin-right: 0.2rem !important;
+}
+#home main .hotaltop .swiper-wrapper {
+  margin-left: 0.2rem;
+}
+#home main .hotaltop .imgbox {
+  width: 6.54rem;
+  height: auto;
+  margin-right: 1rem;
+}
+#home main .hotaltop .imgbox h2 {
+  font-size: 18px;
+  max-height: 1.17333rem;
+  padding-top: 0.16rem;
+  color: #555;
+  font-weight: 700 !important;
+}
+#home main .hotaltop .imgbox span {
+  height: 0.42667rem;
+  background: RGBA(250, 188, 44, 1);
+  border-radius: 0.13333rem 0 0.13333rem 0;
+  color: #fff;
+  font-size: 0.13667rem;
+  padding: 0.01667rem 0.1rem 0;
+  margin-right: 0.52667rem;
+  position: relative;
+  top: -0.01333rem;
+}
+#home main .hotaltop .imgbox i {
+  font-size: 0.2rem;
+  height: 0.42667rem;
+  line-height: 0.42667rem;
+  padding-top: 0.13333rem;
+  color: #aaa;
+  margin-left: -0.3rem;
+}
+#home main .hotaltop .imgbox p {
+  float: left;
+  color: #fabc2c;
+  padding-right: 0.21333rem;
+  margin-right: 0.21333rem;
+  font-weight: 700 !important;
+  line-height: 0.4rem;
+  height: 10px;
+  font-size: 0.2rem;
+}
+#home main .hotaltop .imgbox ul {
+  margin-top: 0.15rem;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 0.15rem;
+  margin-bottom: 0.08rem;
+}
+#home main .hotaltop .imgbox ul li {
+  white-space: nowrap;
+  align-items: center;
+  border-radius: 0.05333rem;
+  border: 0.02667rem solid RGBA(83, 115, 202, 0.3);
+  color: RGBA(83, 115, 202, 1);
+  font-size: 0.20667rem;
+  margin-right: 0.10333rem;
+  padding: 0 0.13333rem;
+}
+#home main .hotaltop .imgbox img {
+  margin-right: 1rem;
+  width: 100%;
+  height: 3.6958rem;
+  border-radius: 0.2rem;
+}
+#home footer {
+  padding-top: 0.2rem;
+  height: 0.53333rem;
+  line-height: 0.28333rem;
+  font-size: 12px;
+  color: #b9b9b9;
+  text-align: center;
+}
