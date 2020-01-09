@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 // import 'antd/dist/antd.css';
-import { Drawer, Button, Radio, Icon, DatePicker } from 'antd';
+import { Drawer, Icon, DatePicker } from 'antd';
 import moment from 'moment'
 import locale from 'antd/lib/date-picker/locale/zh_CN'
 import 'moment/locale/zh-cn'
 moment.locale('zh-cn')
-const { MonthPicker, RangePicker } = DatePicker;
+const { RangePicker } = DatePicker;
 
 //日期选择框
 function range(start, end) {
@@ -18,13 +18,13 @@ function range(start, end) {
 function disabledDate(current) {
     return current && current < moment().endOf('day');
 }
-function disabledDateTime() {
-    return {
-        disabledHours: () => range(0, 24).splice(4, 20),
-        disabledMinutes: () => range(30, 60),
-        disabledSeconds: () => [55, 56],
-    };
-}
+// function disabledDateTime() {
+//     return {
+//         disabledHours: () => range(0, 24).splice(4, 20),
+//         disabledMinutes: () => range(30, 60),
+//         disabledSeconds: () => [55, 56],
+//     };
+// }
 function disabledRangeTime(_, type) {
     if (type === 'start') {
         return {
@@ -59,7 +59,6 @@ class Topfix extends Component {
 
     render() {
         // console.log('acc', this.props)
-        let { showDrawer } = this
         return (
             <>
                 <div className="topmenu" style={{ top: this.props.oft }}>
@@ -99,7 +98,7 @@ class Topfix extends Component {
                             }}
                             showTime={{
                                 hideDisabledOptions: true,
-                                defaultValue: [moment('00:00:00', 'HH:mm:ss'), moment('11:59:59', 'HH:mm:ss')],
+                                defaultValue: [moment('00:00:00', 'HH:mm:ss'), moment('11:59:59', 'HH:mm:ss')]
                             }}
                             format="MM-DD"
                         />

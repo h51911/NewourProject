@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Radio, Icon } from 'antd'
-import Mycontext from '../../store/context'
+// import Mycontext from '../../store/context'
 class bookhotal extends Component {
     constructor(props) {
         super(props);

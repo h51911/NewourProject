@@ -477,6 +477,10 @@ body {
                         color: #aaa;
                     }
                 }
+
+                li:last-child {
+                    padding-right: 0.3rem
+                }
             }
         }
 
@@ -617,7 +621,9 @@ body {
         top: 0;
         left: 0;
         z-index: 999;
-
+        overflow: hidden;
+        overflow-y: hidden;
+        overflow-x: hidden;
     }
 }
 

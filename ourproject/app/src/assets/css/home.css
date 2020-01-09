@@ -464,6 +464,10 @@ body {
   color: #aaa;
 }
 
+#home main .fun .funlist li:last-child {
+  padding-right: 0.3rem;
+}
+
 #home main .hotaltop .swiper-container {
   height: 3.68rem;
   object-fit: cover;
@@ -596,6 +600,9 @@ body {
   top: 0;
   left: 0;
   z-index: 999;
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .ant-drawer-close {

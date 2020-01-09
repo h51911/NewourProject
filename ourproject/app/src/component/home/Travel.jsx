@@ -16,7 +16,7 @@ class Travel extends Component {
                 </div>
 
                 <div className="star">
-                    <a href="###" >
+                    <a  >
                         <img src={require("../../assets/images/star.png")} alt="" />
                     </a>
                 </div>

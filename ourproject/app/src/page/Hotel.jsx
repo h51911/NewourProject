@@ -121,7 +121,7 @@ class Hotel extends Component {
                     </div>
                     {/* minelogo */}
                     <div className="mine">
-                        <a href="###" ></a>
+                        <a ></a>
                     </div>
                     {/* 滚动吸顶菜单 */}
                     <div>

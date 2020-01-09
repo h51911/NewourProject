@@ -10,17 +10,17 @@ class Fun extends Component {
                 <div className="fun">
                     <ul className="funlist">
                         <li>
-                            <a href="###" ><img src={require("../../assets/images/fun1.jpg")} alt="" /></a>
+                            <a  ><img src={require("../../assets/images/fun1.jpg")} alt="" /></a>
                             <span>最爱大海深蓝色</span>
                             <p>潜到海底看美人鱼</p>
                         </li>
                         <li>
-                            <a href="###" ><img src={require("../../assets/images/fun2.jpg")} alt="" /></a>
+                            <a  ><img src={require("../../assets/images/fun2.jpg")} alt="" /></a>
                             <span>我不饿，我就是常常</span>
                             <p>论吃我真是太认真了</p>
                         </li>
                         <li>
-                            <a href="###" ><img src={require("../../assets/images/fun3.jpg")} alt="" /></a>
+                            <a  ><img src={require("../../assets/images/fun3.jpg")} alt="" /></a>
                             <span>带着萌娃看世界</span>
                             <p>年纪虽小眼界却大</p>
                         </li>
