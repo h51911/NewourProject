@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 // import 'antd/dist/antd.css';
 import { Drawer, Button, Radio, Icon, DatePicker } from 'antd';
-
 import moment from 'moment'
 import locale from 'antd/lib/date-picker/locale/zh_CN'
 import 'moment/locale/zh-cn'
 moment.locale('zh-cn')
 const { MonthPicker, RangePicker } = DatePicker;
 
+//日期选择框
 function range(start, end) {
     const result = [];
     for (let i = start; i < end; i++) {
@@ -15,13 +15,9 @@ function range(start, end) {
     }
     return result;
 }
-
-
 function disabledDate(current) {
-    // Can not select days before today and today
     return current && current < moment().endOf('day');
 }
-
 function disabledDateTime() {
     return {
         disabledHours: () => range(0, 24).splice(4, 20),
@@ -29,7 +25,6 @@ function disabledDateTime() {
         disabledSeconds: () => [55, 56],
     };
 }
-
 function disabledRangeTime(_, type) {
     if (type === 'start') {
         return {
@@ -44,7 +39,7 @@ function disabledRangeTime(_, type) {
         disabledSeconds: () => [55, 56],
     };
 }
-
+//
 class Topfix extends Component {
     constructor(props) {
         super(props);
@@ -52,26 +47,19 @@ class Topfix extends Component {
             visible: false,
             placement: 'bottom',
             start: '',
-            end: ''
+            end: '',
+            text: 'Child1'
         }
     }
-    showDrawer = () => {
-        this.setState({
-            visible: true,
-        });
-    };
-    onClose = () => {
-        this.setState({
-            visible: false,
-        });
-    };
     onChange = e => {
         this.setState({
             placement: e.target.value,
         });
     };
+
     render() {
-        const { value, selectedValue } = this.state;
+        // console.log('acc', this.props)
+        let { showDrawer } = this
         return (
             <>
                 <div className="topmenu" style={{ top: this.props.oft }}>
@@ -79,7 +67,7 @@ class Topfix extends Component {
                         <span></span>
                     </div>
                     <div className="search">
-                        <div className="ScDate" onClick={this.showDrawer}>
+                        <div className="ScDate" onClick={this.props.showDrawer}>
                             <Icon type="schedule" />
                             <span className="triangle"></span>
                         </div>
@@ -90,24 +78,16 @@ class Topfix extends Component {
                     </div>
                 </div>
                 <div className="drewer" >
-                    {/* 
-                    <Button type="primary" >
-                        Open
-                     </Button> */}
                     <Drawer
                         zIndex={10000}
                         title="日期选择"
                         placement={this.state.placement}
                         closable={true}
                         maskClosable={true}
-                        onClose={this.onClose}
-                        visible={this.state.visible}
+                        onClose={this.props.onClose}
+                        visible={this.props.visible}
                         height={'100%'}
                     >
-                        {/* <div style={{ width: '100%', border: '1px solid #d9d9d9', borderRadius: 4 }}>
-                            <Calendar locale={locale} fullscreen={false} onPanelChange={onPanelChange} />
-                        </div> */}
-
                         <RangePicker
                             locale={locale}
                             disabledDate={disabledDate}
@@ -122,7 +102,6 @@ class Topfix extends Component {
                                 defaultValue: [moment('00:00:00', 'HH:mm:ss'), moment('11:59:59', 'HH:mm:ss')],
                             }}
                             format="MM-DD"
-
                         />
                     </Drawer>
                 </div>

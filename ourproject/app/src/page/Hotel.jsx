@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../assets/css/home.css';
 import Banner from '../component/home/Carousel';
 import Topfix from '../component/home/Affix.js';
-import Bookhotal from '../component/home/bookhotal';
+import Bookhotal from '../component/home/bookhotal.js';
 import Travel from '../component/home/Travel';
 import Bigcity from '../component/home/bigcity';
 import Hotaltop from '../component/home/hotaltop';
@@ -13,8 +13,8 @@ import { Affix } from 'antd';
 import '../assets/js/rem2';
 
 class Hotel extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             top: -105,
             currentPage: 0,
@@ -24,29 +24,15 @@ class Hotel extends Component {
             end: ''
         }
     }
-    showDrawer = () => {
-        this.setState({
-            visible: true,
-        });
-    };
-    onClose = () => {
-        this.setState({
-            visible: false,
-        });
-    };
-    onChange = e => {
-        this.setState({
-            placement: e.target.value,
-        });
-    };
 
+
+    //监听并设置吸顶菜单
     componentDidMount() {
         if (document.addEventListener) {
             document.addEventListener('DOMMouseScroll', this.mouseScroll.bind(this), false);
         }
         window.onmousewheel = document.onmousewheel = this.mouseScroll.bind(this);
     }
-    //监听并设置吸顶菜单
     scroll(n) {
         if (this.state.currentPage >= 6) {
             let top = this.state.top = 0
@@ -62,8 +48,8 @@ class Hotel extends Component {
         this.setState({
             currentPage: this.state.currentPage + n
         });
-
     }
+
 
     //给document/window绑定的滚轮时间
     mouseScroll(e) {
@@ -106,6 +92,25 @@ class Hotel extends Component {
             end: b
         })
     }
+
+    //控制抽屉显示隐藏
+    send = (visible) => {
+        this.setState({
+            visible
+        })
+    }
+    showDrawer = () => {
+        this.setState({
+            visible: true,
+        });
+    };
+    onClose = () => {
+        this.setState({
+            visible: false,
+        });
+    };
+
+
     render() {
         return (
             <div id="home">
@@ -122,16 +127,27 @@ class Hotel extends Component {
                     <div>
                         <Affix offsetTop={120} onChange={affixed => {
                             // console.log(affixed)
+
                             this.xitop(affixed)
                         }} >
-                            <Topfix oft={this.state.top} seprops={this.seprops} onScroll={this.handleScroll} />
+                            <Topfix
+                                visible={this.state.visible}
+                                oft={this.state.top}
+                                seprops={this.seprops}
+                                onScroll={this.handleScroll}
+                                showDrawer={this.showDrawer}
+                                onClose={this.onClose}
+                            />
                         </Affix>
                     </div>
                 </header>
-
                 <main>
                     {/* 搜索栏 */}
-                    <Bookhotal start={this.state.start} end={this.state.end} />
+                    <Bookhotal
+                        start={this.state.start}
+                        end={this.state.end}
+                        send={this.send}
+                    />
                     {/* 旅游攻略 */}
                     <Travel />
                     {/* 大城小事 */}
