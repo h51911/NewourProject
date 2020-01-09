@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import 'antd/dist/antd.css';
-import { Drawer, Button, Radio, Calendar, DatePicker } from 'antd';
+import { Drawer, Button, Radio, Icon, DatePicker } from 'antd';
 
 import moment from 'moment'
 import locale from 'antd/lib/date-picker/locale/zh_CN'
@@ -46,11 +46,14 @@ function disabledRangeTime(_, type) {
 }
 
 class Topfix extends Component {
-    state = {
-        visible: false,
-        placement: 'bottom',
-        data: []
-
+    constructor(props) {
+        super(props);
+        this.state = {
+            visible: false,
+            placement: 'bottom',
+            start: '',
+            end: ''
+        }
     }
     showDrawer = () => {
         this.setState({
@@ -67,10 +70,6 @@ class Topfix extends Component {
             placement: e.target.value,
         });
     };
-    abc(value) {
-        console.log(this.refs)
-        console.log(value)
-    }
     render() {
         const { value, selectedValue } = this.state;
         return (
@@ -81,7 +80,7 @@ class Topfix extends Component {
                     </div>
                     <div className="search">
                         <div className="ScDate" onClick={this.showDrawer}>
-                            {this.state.data}
+                            <Icon type="schedule" />
                             <span className="triangle"></span>
                         </div>
                         <div className="Scplace">丽江</div>
@@ -113,22 +112,16 @@ class Topfix extends Component {
                             locale={locale}
                             disabledDate={disabledDate}
                             disabledTime={disabledRangeTime}
-                            ref="names"
-                            className="namess"
-                            onChange={data => {
-                                data.map(item => {
-                                    console.log(item._d)
-                                    let data = item._d
-                                    this.setState({
-                                        data
-                                    })
-                                })
+                            onChange={date => {
+                                let start = JSON.stringify(date[0]._d).slice(6, 11);
+                                let end = JSON.stringify(date[1]._d).slice(6, 11);
+                                this.props.seprops.call(this, start, end)
                             }}
                             showTime={{
                                 hideDisabledOptions: true,
                                 defaultValue: [moment('00:00:00', 'HH:mm:ss'), moment('11:59:59', 'HH:mm:ss')],
                             }}
-                            format="YYYY-MM-DD"
+                            format="MM-DD"
 
                         />
                     </Drawer>

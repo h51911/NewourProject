@@ -2,7 +2,12 @@ import React, { Component } from 'react'
 import { Radio, Icon } from 'antd'
 
 class bookhotal extends Component {
+    constructor(props) {
+        super(props);
+
+    }
     render() {
+        // console.log(this.props)
         return (
             <div className="Scbook">
                 <div className="panel">
@@ -18,14 +23,14 @@ class bookhotal extends Component {
                     <div className="booktime">
                         <div className="btL">
                             <p>入住日期</p>
-                            <i>01月06日</i>
+                            <i>{this.props.start}</i>
                         </div>
                         <div className="btM">
                             共 1 晚
                         </div>
                         <div className="btL">
                             <p>离店日期</p>
-                            <i>01月07日</i>
+                            <i>{this.props.end}</i>
                         </div>
                     </div>
                     <div className="Scbtn">
@@ -34,7 +39,7 @@ class bookhotal extends Component {
                     <p className="textban">
                         <i>
                             <Icon type="safety-certificate" />
-                            </i>
+                        </i>
                         官方渠道预订享低价保证
                     </p>
                 </div>

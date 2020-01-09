@@ -1,7 +1,6 @@
 html,
 body {
     width: 100%;
-    // overflow: hidden;
 }
 
 #home {
@@ -359,7 +358,8 @@ body {
         }
 
         .bigcity {
-
+            width: 100%;
+            overflow: hidden;
             padding-right: 0 !important;
             padding-left: 0 !important;
             top: 0.2rem;
@@ -556,6 +556,7 @@ body {
                     justify-content: space-around;
                     margin-left: 0.15rem;
                     margin-bottom: 0.08rem;
+                    overflow: hidden;
 
                     li {
                         white-space: nowrap;
@@ -565,7 +566,7 @@ body {
                         color: RGBA(83, 115, 202, 1);
                         font-size: .20667rem;
                         margin-right: .10333rem;
-                        padding: 0 .13333rem;
+                        padding: 0 .053333rem;
                     }
                 }
 
@@ -578,12 +579,138 @@ body {
             }
         }
 
+        .adv {
+            position: fixed;
+            bottom: 1rem;
+            z-index: 10;
+            width: 100%;
+
+            .zhe {
+                background-color: rgba(255, 255, 255, 0);
+                width: 0.4rem;
+                height: 0.4rem;
+                position: absolute;
+                z-index: 11;
+                left: 0.3rem;
+                top: 0.7rem;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
         .foot {
-            margin-bottom: 0.5rem;
-            margin-top: 0.1rem;
+            width: 100%;
+            height: .2rem;
+            margin-bottom: 1rem;
+            margin-top: 0.20rem;
+            z-index: 999;
             text-align: center;
             color: #b9b9b9;
             font-size: 12px;
         }
     }
+
+    .drewer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 999;
+
+    }
+}
+
+//antd
+
+.ant-drawer-close {
+    left: 0
+}
+
+.ant-drawer-title {
+    margin-left: 2.5rem;
+    margin-top: 0;
+}
+
+.ant-drawer {
+    width: 100%;
+    overflow: hidden;
+    z-index: 10001
+}
+
+.ant-calendar-picker-container,
+.ant-calendar-picker-container-placement-bottomLeft {
+    z-index: 10002;
+    width: 100rem;
+}
+
+.ant-calendar-range-part,
+.ant-calendar-range-left {
+    width: 100%;
+}
+
+
+
+.ant-calendar-input-wrap {
+    display: none;
+}
+
+.ant-calendar-disabled-cell.ant-calendar-today .ant-calendar-date::before {
+    border: none;
+}
+
+.ant-calendar .ant-calendar-ok-btn {
+    background-color: #fabc2c;
+}
+
+.ant-calendar-my-select {
+    text-align: center;
+    margin-left: -2.5rem;
+}
+
+
+
+.ant-calendar-range {
+    width: 7.5rem;
+    overflow: hidden;
+}
+
+
+.ant-calendar-range .ant-calendar-selected-start-date .ant-calendar-date,
+.ant-calendar-range .ant-calendar-selected-end-date .ant-calendar-date {
+    color: #fff;
+    background: #fabc2c !important;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+
+.ant-calendar-disabled-cell .ant-calendar-date {
+
+    border-radius: 100px;
+    width: .5rem;
+}
+
+.ant-calendar-year-select {
+    color: #fabc2c !important;
+}
+
+.ant-calendar-year-select:hover {
+    color: #fabc2c !important;
+}
+
+.ant-calendar .ant-calendar-ok-btn {
+    border-color: #fabc2c;
+}
+
+.ant-calendar-time-picker-btn {
+    color: white;
+    z-index: -1;
+}
+
+.ant-calendar-range.ant-calendar-time .ant-calendar-footer .ant-calendar-time-picker-btn {
+    display: none;
+}
+
+.ant-calendar-picker {
+    width: 6.4rem !important;
 }
