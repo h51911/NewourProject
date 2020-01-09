@@ -14,6 +14,7 @@ import Treatment from './page/Treatment'; // 礼遇
 import Member from './page/Member'; // 会员
 import Search from './page/Search';// 搜索
 import Hoelist from './component/Hoelist';// 酒店列表
+import Detail from './component/home/detail';// 酒店列表
 // 样式
 import './App.css';
 import './assets/css/search.css';
@@ -44,6 +45,9 @@ function App() {
         </Route >
         <Route path="/hoelist" >
           <Hoelist></Hoelist>
+        </Route >
+        <Route path="/detail" >
+          <Detail />
         </Route >
         {/* 默认进入首页 */}
         <Redirect to="/hotel" />

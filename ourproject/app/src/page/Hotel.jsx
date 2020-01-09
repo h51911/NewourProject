@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import '../assets/css/home.css';
 import Banner from '../component/home/Carousel';
-import Topfix from '../component/home/Affix.js';
-import Bookhotal from '../component/home/bookhotal.js';
+import Topfix from '../component/home/Affix.jsx';
+import Bookhotal from '../component/home/bookhotal';
 import Travel from '../component/home/Travel';
 import Bigcity from '../component/home/bigcity';
 import Hotaltop from '../component/home/hotaltop';
@@ -35,14 +35,14 @@ class Hotel extends Component {
     }
     scroll(n) {
         if (this.state.currentPage >= 6) {
-            let top = this.state.top = 0
+            // let top = this.state.top
             this.setState({
-                top
+                top: 0
             });
         } else if (this.state.currentPage < 6) {
-            let top = this.state.top = -105
+            // let top = this.state.top
             this.setState({
-                top
+                top: -105
             });
         }
         this.setState({
@@ -121,7 +121,7 @@ class Hotel extends Component {
                     </div>
                     {/* minelogo */}
                     <div className="mine">
-                        <a ></a>
+                        <span ></span>
                     </div>
                     {/* 滚动吸顶菜单 */}
                     <div>

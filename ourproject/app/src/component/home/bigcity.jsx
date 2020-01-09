@@ -24,22 +24,22 @@ class Bigcity extends Component {
                     </div> */}
                     <ul>
                         <li>
-                            <a  ><img src={require("../../assets/images/bc1.jpg")} alt="" /></a>
+                            <img src={require("../../assets/images/bc1.jpg")} alt="" />
                         </li>
                         <li>
-                            <a  ><img src={require("../../assets/images/bc2.jpg")} alt="" /></a>
+                            <img src={require("../../assets/images/bc2.jpg")} alt="" />
                         </li>
                         <li>
-                            <a  ><img src={require("../../assets/images/bc3.jpg")} alt="" /></a>
+                            <img src={require("../../assets/images/bc3.jpg")} alt="" />
                         </li>
                         <li>
-                            <a  ><img src={require("../../assets/images/bc4.jpg")} alt="" /></a>
+                            <img src={require("../../assets/images/bc4.jpg")} alt="" />
                         </li>
                         <li>
-                            <a  ><img src={require("../../assets/images/bc5.jpg")} alt="" /></a>
+                            <img src={require("../../assets/images/bc5.jpg")} alt="" />
                         </li>
                         <li>
-                            <a  ><img src={require("../../assets/images/bc6.jpg")} alt="" /></a>
+                            <img src={require("../../assets/images/bc6.jpg")} alt="" />
                         </li>
                     </ul>
                 </div>

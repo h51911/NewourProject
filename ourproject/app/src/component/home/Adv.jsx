@@ -17,7 +17,7 @@ class Adv extends Component {
         return (
             <div className="adv" style={{ display: this.state.dsp }}>
                 <button className="zhe" onClick={this.closeadv}></button>
-                <img src={require("../../assets/images/adv.png")} />
+                <img src={require("../../assets/images/adv.png")} alt="" />
             </div>
         )
     }

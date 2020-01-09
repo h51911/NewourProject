@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import { Affix } from 'antd'
-
+import { Link } from 'react-router-dom';
 class Travel extends Component {
     render() {
         return (
@@ -10,15 +10,21 @@ class Travel extends Component {
                     <p className="p2">更多></p>
                 </div>
                 <div className="Tcon">
-                    <div className="travelitem"><img src={require("../../assets/images/tr1.jpg")} alt="" /></div>
-                    <div className="travelitem"><img src={require("../../assets/images/tr2.jpg")} alt="" /></div>
-                    <div className="travelitem"><img src={require("../../assets/images/tr3.jpg")} alt="" /></div>
+                    <Link to="/detail" >
+                        <div className="travelitem"><img src={require("../../assets/images/tr1.jpg")} alt="" /></div>
+                    </Link>
+                    <Link to="/detail" >
+                        <div className="travelitem"><img src={require("../../assets/images/tr2.jpg")} alt="" /></div>
+                    </Link>
+                    <Link to="/detail" >
+                        <div className="travelitem"><img src={require("../../assets/images/tr3.jpg")} alt="" /></div>
+                    </Link>
                 </div>
 
                 <div className="star">
-                    <a  >
-                        <img src={require("../../assets/images/star.png")} alt="" />
-                    </a>
+
+                    <img src={require("../../assets/images/star.png")} alt="" />
+
                 </div>
             </div>
         )

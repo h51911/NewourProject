@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 // import 'antd/dist/antd.css';
-import { Drawer, Button, Radio, Calendar, DatePicker } from 'antd';
-
+import { Drawer, Icon, DatePicker } from 'antd';
 import moment from 'moment'
 import locale from 'antd/lib/date-picker/locale/zh_CN'
 import 'moment/locale/zh-cn'
 moment.locale('zh-cn')
-const { MonthPicker, RangePicker } = DatePicker;
+const { RangePicker } = DatePicker;
 
+//日期选择框
 function range(start, end) {
     const result = [];
     for (let i = start; i < end; i++) {
@@ -16,19 +16,18 @@ function range(start, end) {
     return result;
 }
 
-
 function disabledDate(current) {
     // Can not select days before today and today
     return current && current < moment().endOf('day');
 }
 
-function disabledDateTime() {
-    return {
-        disabledHours: () => range(0, 24).splice(4, 20),
-        disabledMinutes: () => range(30, 60),
-        disabledSeconds: () => [55, 56],
-    };
-}
+// function disabledDateTime() {
+//     return {
+//         disabledHours: () => range(0, 24).splice(4, 20),
+//         disabledMinutes: () => range(30, 60),
+//         disabledSeconds: () => [55, 56],
+//     };
+// }
 
 function disabledRangeTime(_, type) {
     if (type === 'start') {
@@ -45,34 +44,26 @@ function disabledRangeTime(_, type) {
     };
 }
 
+//
 class Topfix extends Component {
-    state = {
-        visible: false,
-        placement: 'bottom',
-        data: []
-
-    }
-    showDrawer = () => {
-        this.setState({
-            visible: true,
-        });
-    };
-    onClose = () => {
-        this.setState({
+    constructor(props) {
+        super(props);
+        this.state = {
             visible: false,
-        });
-    };
+            placement: 'bottom',
+            start: '',
+            end: '',
+            text: 'Child1'
+        }
+    }
     onChange = e => {
         this.setState({
             placement: e.target.value,
         });
     };
-    abc(value) {
-        console.log(this.refs)
-        console.log(value)
-    }
+
     render() {
-        const { value, selectedValue } = this.state;
+        // console.log('acc', this.props)
         return (
             <>
                 <div className="topmenu" style={{ top: this.props.oft }}>
@@ -80,8 +71,8 @@ class Topfix extends Component {
                         <span></span>
                     </div>
                     <div className="search">
-                        <div className="ScDate" onClick={this.showDrawer}>
-                            {this.state.data}
+                        <div className="ScDate" onClick={this.props.showDrawer}>
+                            <Icon type="schedule" />
                             <span className="triangle"></span>
                         </div>
                         <div className="Scplace">丽江</div>
@@ -91,45 +82,30 @@ class Topfix extends Component {
                     </div>
                 </div>
                 <div className="drewer" >
-                    {/* 
-                    <Button type="primary" >
-                        Open
-                     </Button> */}
                     <Drawer
                         zIndex={10000}
                         title="日期选择"
                         placement={this.state.placement}
                         closable={true}
                         maskClosable={true}
-                        onClose={this.onClose}
-                        visible={this.state.visible}
+                        onClose={this.props.onClose}
+                        visible={this.props.visible}
                         height={'100%'}
                     >
-                        {/* <div style={{ width: '100%', border: '1px solid #d9d9d9', borderRadius: 4 }}>
-                            <Calendar locale={locale} fullscreen={false} onPanelChange={onPanelChange} />
-                        </div> */}
-
                         <RangePicker
                             locale={locale}
                             disabledDate={disabledDate}
                             disabledTime={disabledRangeTime}
-                            ref="names"
-                            className="namess"
-                            onChange={data => {
-                                data.map(item => {
-                                    console.log(item._d)
-                                    let data = item._d
-                                    this.setState({
-                                        data
-                                    })
-                                })
+                            onChange={date => {
+                                let start = JSON.stringify(date[0]._d).slice(6, 11);
+                                let end = JSON.stringify(date[1]._d).slice(6, 11);
+                                this.props.seprops.call(this, start, end)
                             }}
                             showTime={{
                                 hideDisabledOptions: true,
-                                defaultValue: [moment('00:00:00', 'HH:mm:ss'), moment('11:59:59', 'HH:mm:ss')],
+                                defaultValue: [moment('00:00:00', 'HH:mm:ss'), moment('11:59:59', 'HH:mm:ss')]
                             }}
-                            format="YYYY-MM-DD"
-
+                            format="MM-DD"
                         />
                     </Drawer>
                 </div>
