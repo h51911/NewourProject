@@ -3,7 +3,11 @@ import '../../assets/css/detail.css'
 import { Drawer, Radio } from 'antd'
 const RadioGroup = Radio.Group;
 class Detail extends Component {
-    state = { visible: false, placement: 'right' };
+
+    state = {
+        visible: false,
+        placement: 'right',
+    };
     showDrawer = () => {
         this.setState({
             visible: true,

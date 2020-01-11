@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 // import 'antd/dist/antd.css';
 import { Drawer, Icon, DatePicker } from 'antd';
 import moment from 'moment'
@@ -64,6 +65,7 @@ class Topfix extends Component {
 
     render() {
         // console.log('acc', this.props)
+
         return (
             <>
                 <div className="topmenu" style={{ top: this.props.oft }}>
@@ -75,7 +77,9 @@ class Topfix extends Component {
                             <Icon type="schedule" />
                             <span className="triangle"></span>
                         </div>
-                        <div className="Scplace">丽江</div>
+                        <Link to="/Search">
+                            <div className="Scplace">丽江</div>
+                        </Link>
                     </div>
                     <div className="logomine">
                         <span />

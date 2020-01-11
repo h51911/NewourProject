@@ -1,15 +1,33 @@
 import React, { Component } from 'react'
 import { Radio, Icon } from 'antd'
+import { Link } from 'react-router-dom'
+// import axios from 'axios';
+// import Api from './api.js'
 // import Mycontext from '../../store/context'
 class bookhotal extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            visible: true
+            visible: true,
+            data: []
         }
     }
+    // async componentDidMount() {
+    //     let data = await Api.get({
+    //         china: 1,
+    //         province: '',
+    //         city: '',
+    //         pn: '',
+    //         ps: '',
+    //         lang: 'zh-CN',
+    //     });
+    //     this.setState({
+    //         data
+    //     })
+    // }
 
     render() {
+        // console.log(this.state.data)
         // console.log('aaa', this.props)
         return (
             <div className="Scbook">
@@ -36,9 +54,11 @@ class bookhotal extends Component {
                             <i>{this.props.end}</i>
                         </div>
                     </div>
-                    <div className="Scbtn">
-                        开始搜索
+                    <Link to="/Search">
+                        <div className="Scbtn">
+                            开始搜索
                         </div>
+                    </Link>
                     <p className="textban">
                         <i>
                             <Icon type="safety-certificate" />

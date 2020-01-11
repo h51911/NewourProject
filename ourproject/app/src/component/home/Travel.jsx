@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import { Affix } from 'antd'
 import { Link } from 'react-router-dom';
 class Travel extends Component {
+   
     render() {
         return (
             <div className="travel">
