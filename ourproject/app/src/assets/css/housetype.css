@@ -1,0 +1,293 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.tab-item {
+  padding: 0.53333rem 0.64rem;
+}
+.tab-item .search-date {
+  height: 1.92rem;
+  width: 100%;
+  border-radius: 0.26667rem;
+  background-color: #fff;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+  padding: 0.53333rem 0;
+  margin-bottom: 0.53333rem;
+}
+.tab-item .search-date p:nth-child(1) {
+  float: left;
+  text-align: center;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+.tab-item .search-date p:nth-child(1) span:nth-child(1) {
+  color: #b9b9b9;
+  line-height: 18px;
+}
+.tab-item .search-date p:nth-child(1) span:nth-child(2) {
+  color: #555;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.tab-item .search-date p:nth-child(2) {
+  float: left;
+  text-align: center;
+  width: 30%;
+  line-height: 1.06667rem;
+  color: #fabc2c;
+  font-size: 15px;
+  font-weight: 700;
+}
+.tab-item .search-date p:nth-child(3) {
+  float: right;
+  text-align: center;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+.tab-item .search-date p:nth-child(3) span:nth-child(1) {
+  color: #b9b9b9;
+  line-height: 18px;
+}
+.tab-item .search-date p:nth-child(3) span:nth-child(2) {
+  color: #555;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.tab-item .promotion-wrap {
+  width: 100%;
+  margin-bottom: 0.26667rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.tab-item .promotion-wrap span {
+  border-radius: 0.05333rem;
+  color: #ff8080;
+  font-size: 0.26667rem;
+  padding: 0.08rem 0.13333rem 0;
+  height: 0.48rem;
+  box-sizing: border-box;
+  background: #ffe6e6;
+  flex: none;
+  margin-right: 0.26667rem;
+}
+.tab-item .promotion-wrap p {
+  flex-wrap: wrap;
+  flex: auto;
+  font-size: 0.32rem;
+  line-height: 0.48rem;
+  color: #555;
+}
+.tab-item .layout-info {
+  position: relative;
+  margin-bottom: 1.06667rem;
+}
+.tab-item .layout-info .room-image img {
+  width: 100%;
+  height: 4.906667rem;
+}
+.tab-item .layout-info .base-info-absolute {
+  z-index: 99;
+  position: absolute;
+  left: 0.26667rem;
+  top: 150px;
+  color: #fff;
+  font-size: 18px;
+}
+.tab-item .layout-info .base-info-absolute span:nth-child(1) {
+  max-width: 5.6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.tab-item .layout-info .base-info-absolute span:nth-child(2) {
+  margin-left: 0.13333rem;
+  margin-right: 0.26667rem;
+}
+.tab-item .layout-info .base-info-absolute span:nth-child(3) {
+  color: #fff;
+  padding: 0.10667rem 0.13333rem;
+  font-size: 10px;
+  background-color: #fabc2c;
+  border-radius: 0.10667rem;
+}
+.tab-item .layout-info .promotionTag {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  top: 0.21333rem;
+}
+.tab-item .layout-info .promotionTag span {
+  flex: none;
+  display: flex;
+  align-items: center;
+  border-radius: 0.05333rem;
+  color: #ff8080;
+  font-size: 0.26667rem;
+  height: 0.48rem;
+  background: #ffe6e6;
+  margin-right: 0.13333rem;
+  padding: 0.02667rem 0.13333rem 0;
+  box-sizing: border-box;
+}
+.tab-item .layout-info .base-info-normal {
+  height: 1.2rem;
+  line-height: 1.2rem;
+  color: #555;
+  font-size: 12px;
+}
+.tab-item .layout-info .base-info-normal span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.26667rem;
+}
+.tab-item .layout-info .base-info-normal span:nth-child(4) {
+  float: right;
+  margin-right: 0;
+}
+.tab-item .layout-info .roomLabel {
+  padding-bottom: 0.26667rem;
+  position: relative;
+  top: -0.10667rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.tab-item .layout-info .roomLabel span {
+  flex: none;
+  display: flex;
+  align-items: center;
+  border-radius: 0.05333rem;
+  border: 0.02667rem solid RGBA(255, 183, 14, 0.3);
+  color: RGBA(255, 183, 14, 1);
+  font-size: 0.26667rem;
+  margin-right: 0.13333rem;
+  padding: 0.02667rem 0.13333rem 0;
+  height: 0.48rem;
+  box-sizing: border-box;
+}
+.tab-item .layout-info .roomLine {
+  height: 1px;
+  background: #f4f4f4;
+}
+.tab-item .layout-info .price-list .price-item {
+  height: 2.026667rem;
+  border-bottom: 1px solid #f4f4f4;
+  padding: 0.26667rem 0;
+}
+.tab-item .layout-info .price-list .price-item .price-item-left {
+  float: left;
+  width: auto;
+  color: #555;
+  font-size: 0.266667rem;
+  position: relative;
+  height: 100%;
+}
+.tab-item .layout-info .price-list .price-item .price-item-left span {
+  margin-right: 0.26667rem;
+  float: left;
+  vertical-align: top;
+}
+.tab-item
+  .layout-info
+  .price-list
+  .price-item
+  .price-item-left
+  span:nth-child(1) {
+  font-size: 0.4rem;
+}
+.tab-item
+  .layout-info
+  .price-list
+  .price-item
+  .price-item-left
+  span:nth-child(2),
+.tab-item
+  .layout-info
+  .price-list
+  .price-item
+  .price-item-left
+  span:nth-child(4) {
+  clear: both;
+}
+.tab-item
+  .layout-info
+  .price-list
+  .price-item
+  .price-item-left
+  span:nth-child(2),
+.tab-item
+  .layout-info
+  .price-list
+  .price-item
+  .price-item-left
+  span:nth-child(3) {
+  position: relative;
+  top: -0.08rem;
+  color: #aaa;
+}
+.tab-item
+  .layout-info
+  .price-list
+  .price-item
+  .price-item-left
+  span:nth-child(4) {
+  padding: 0.05333rem;
+  background-color: #eaf9f8;
+  border-radius: 0.053333rem;
+  position: relative;
+  top: -0.026667rem;
+}
+.tab-item .layout-info .price-list .price-item .price-item-right {
+  float: right;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.tab-item .layout-info .price-list .price-item .price-item-right span {
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  background-color: #fabc2c;
+  padding: 0.13333rem 0.4rem;
+  margin: 0 !important;
+  border-radius: 100px;
+}
+.tab-item .layout-info .price-list .price-item .price-item-center {
+  float: right;
+  padding-right: 0.26667rem;
+  height: 100%;
+}
+.tab-item .layout-info .price-list .price-item .price-item-center p {
+  display: flex;
+  align-items: baseline;
+  flex-direction: row-reverse;
+  color: #ff6262;
+  margin-top: 3px;
+}
+.tab-item .layout-info .price-list .price-item .price-item-center p span {
+  font-size: 0.533333rem;
+}
+.tab-item
+  .layout-info
+  .price-list
+  .price-item
+  .price-item-center
+  span:nth-child(2) {
+  color: #555;
+  padding-left: 0.13333rem;
+  bottom: 0;
+}
+.tab-item .page-footer {
+  height: 0.53333rem;
+  line-height: 0.53333rem;
+  font-size: 12px;
+  color: #b9b9b9;
+  padding: 0.26667rem;
+  text-align: center;
+}

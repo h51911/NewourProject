@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.animated {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.animated img {
+  width: 100%;
+}
+.animated .hotel-info-item {
+  padding: 0.53333rem 0.64rem 0;
+  background-color: #fff;
+  border-bottom: 1px solid #f4f4f4;
+  padding-top: 1.06667rem;
+}
+.animated .hotel-info-item .item-title {
+  font-size: 15px;
+  color: #555;
+  font-weight: 700;
+}
+.animated .hotel-info-item .item-content {
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 0.53333rem;
+  border-bottom: 1px solid #f4f4f4;
+}
+.animated .hotel-info-item .item-content p {
+  margin-bottom: 0.53333rem;
+  font-size: 12px;
+  color: #555;
+  height: 18px;
+  line-height: 18px;
+}
+.animated .hotel-info-item .item-content p span {
+  margin-left: 0.2rem;
+}
+.animated .hotel-info-item .item-footer {
+  height: 1.93333rem;
+  line-height: 1.93333rem;
+  display: flex;
+  align-items: center;
+}
+.animated .hotel-info-item .item-footer span {
+  display: inline-block;
+  width: 6.853333rem;
+  font-size: 0.4rem;
+  color: #555;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.animated .hotel-info-item .item-footer img {
+  width: 1.333333rem;
+  height: 0.933333rem;
+}
+.animated .complex,
+.animated .service {
+  padding: 0.53333rem 0.64rem 0;
+  background-color: #fff;
+  border-bottom: 1px solid #f4f4f4;
+}
+.animated .complex .item-title,
+.animated .service .item-title {
+  font-size: 0.4rem;
+  color: #555;
+  font-weight: 700;
+}
+.animated .complex .item-content,
+.animated .service .item-content {
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 0.53333rem;
+}
+.animated .complex .item-content span,
+.animated .service .item-content span {
+  margin-bottom: 0.53333rem;
+  font-size: 0.32rem;
+  color: #555;
+  height: 0.48rem;
+  line-height: 0.48rem;
+  flex: 0 0 33%;
+  border-right: 1px solid #f4f4f4;
+  text-align: center;
+}
+.animated .h5_policy .footer_tips {
+  box-sizing: border-box;
+  padding: 0.53333rem 0.64rem;
+  width: 100%;
+  background: #fff;
+  color: #555;
+  border-bottom: 0.02667rem solid #f4f4f4;
+}
+.animated .h5_policy .footer_tips p {
+  width: 100%;
+  height: 0.56rem;
+  line-height: 0.56rem;
+  font-size: 0.4rem;
+  margin-bottom: 0.26667rem;
+  font-weight: 700;
+}
+.animated .h5_policy .footer_tips ul {
+  margin: 0;
+  padding-left: 0.53333rem;
+}
+.animated .h5_policy .footer_tips ul li {
+  font-size: 0.32rem;
+  line-height: 0.58667rem;
+  position: relative;
+  left: -0.13333rem;
+  list-style-type: disc;
+}
+.animated .h5_policy .footer_tips1 {
+  border-bottom: none;
+}
+.animated .page-footer {
+  height: 0.53333rem;
+  line-height: 0.53333rem;
+  font-size: 12px;
+  color: #b9b9b9;
+  padding: 0.26667rem;
+  text-align: center;
+}
+.book-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 99;
+  position: fixed;
+}
+.book-footer .shadow {
+  position: absolute;
+  width: 100%;
+  height: 0.13333rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.05));
+  top: -0.13333rem;
+  left: 0;
+  bottom: 0;
+}
+.book-footer .footerContent {
+  height: 1.6rem;
+  padding: 0 0.64rem;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.book-footer .footerContent .footer-left {
+  display: flex;
+  align-items: center;
+  color: #ff6262;
+}
+.book-footer .footerContent .footer-left span:nth-child(2) {
+  font-size: 0.88rem;
+}
+.book-footer .footerContent .footer-left span:nth-child(4) {
+  position: relative;
+  top: -0.05333rem;
+  padding: 0.05333rem;
+  margin-left: 0.13333rem;
+  font-size: 10px;
+  color: #555;
+  display: inline-block;
+  line-height: 10px;
+  border-radius: 0.05333rem;
+  background-color: #fff3d8;
+}
+.book-footer .footerContent .footer-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.book-footer .footerContent .footer-right a {
+  width: 2.66667rem;
+  height: 1.06667rem;
+  background-color: #ffb70e;
+  border-radius: 2.66667rem;
+  font-weight: 700;
+  font-size: 0.4rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1.06667rem;
+}

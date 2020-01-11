@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.tpy {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.64rem;
+}
+.tpy .ant-card-bordered {
+  margin-left: 0.12rem;
+  margin-right: 0.09rem;
+  margin-bottom: 0.26667rem;
+  box-shadow: 0 0.01333rem 0.13333rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5%;
+}
+.tpy .ant-card-bordered .ant-card-cover img {
+  width: 2.4rem;
+  height: 3.493333rem;
+  margin: auto;
+}
+.tpy .ant-card-bordered .ant-card-body {
+  padding: 0;
+  font-size: 0.26667rem;
+  height: 0.37333rem;
+  line-height: 0.37333rem;
+  color: #aaa;
+  text-align: center;
+  margin-bottom: 0.26667rem;
+}
+.tpy2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.64rem;
+}
+.tpy2 .ant-card-bordered {
+  margin-left: 0.12rem;
+  margin-right: 0.09rem;
+  margin-bottom: 0.26667rem;
+  box-shadow: 0 0.01333rem 0.13333rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5%;
+}
+.tpy2 .ant-card-bordered .ant-card-cover img {
+  width: 2.4rem;
+  height: 3.493333rem;
+  margin: auto;
+}
+.tpy2 .ant-card-bordered .ant-card-body {
+  padding: 0;
+  font-size: 0.26667rem;
+  height: 0.37333rem;
+  line-height: 0.37333rem;
+  color: #aaa;
+  text-align: center;
+  margin-bottom: 0.26667rem;
+}
+.footer {
+  font-size: 0.32rem;
+  color: #aaa;
+  line-height: 0.45333rem;
+  text-align: center;
+  width: 100%;
+  margin-top: 0.6667rem;
+  margin-bottom: 0.333rem;
+}

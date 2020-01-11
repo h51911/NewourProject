@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.siteheader {
+  padding: 0 0.42667rem;
+  margin-bottom: 0.6rem;
+}
+.siteheader h2 {
+  font-size: 0.58667rem;
+  color: #555;
+  font-weight: 600;
+  margin: 0.8em 0;
+}
+.siteheader .sitetuijian {
+  width: 100%;
+  height: 6.4rem;
+}
+.siteheader .sitetuijian ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow-x: auto;
+}
+.siteheader .sitetuijian ul li {
+  width: 4.573333rem;
+  height: 100%;
+  margin: 0 2.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.siteheader .sitetuijian ul li img {
+  width: 4.106667rem;
+  height: 5.973333rem;
+  box-shadow: 0 0.01333rem 0.13333rem 0 rgba(0, 0, 0, 0.1);
+}
+.siteheader .ant-menu-horizontal {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.siteheader .ant-card-body {
+  padding: 0;
+}
+.siteheader .ant-tabs-bar,
+.siteheader .ant-card-head,
+.siteheader .ant-card-head,
+.siteheader .ant-tabs-bar {
+  border: none;
+}
+.siteheader .ant-tabs-tab-active,
+.siteheader .ant-tabs-tab {
+  margin: 0 2.666667rem 0 0;
+}
+.siteheader .ant-tabs-nav .ant-tabs-tab-active {
+  color: #fabc2c;
+}
+.siteheader .ant-tabs-ink-bar {
+  background-color: #fabc2c;
+}
