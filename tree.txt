@@ -1,0 +1,31 @@
+﻿文件夹 PATH 列表
+卷序列号为 209D-3CCE
+C:.
+├─app
+│  ├─public
+│  └─src
+│      ├─assets
+│      │  ├─css
+│      │  ├─images
+│      │  └─js
+│      ├─component
+│      │  └─home
+│      └─page
+├─img
+│  ├─systems
+│  └─webApp
+├─server
+│  ├─data
+│  ├─db
+│  ├─routers
+│  └─utils
+└─system
+    ├─public
+    └─src
+        ├─api
+        ├─assets
+        │  ├─css
+        │  └─images
+        ├─component
+        ├─data
+        └─page
